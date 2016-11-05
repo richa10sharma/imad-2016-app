@@ -4,47 +4,19 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articleOne ={
-    title: `Article-One`,
-    heading: `Article One`,
-    date: `Sept 5`,
-    content: `<p>
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                </p>
-                <p>
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                </p>
-                <p>
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                </p>
-                <p>
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                This is the first content for my first article
-                </p>`
-    };
+var config - {
+
+    user:'richa10sharma',
+    databse:'richa10sharma',
+    host:'http://db.imad.hasura-app.io/',
+    port:'5432',
+    password:process.env.DB_PASSWORD
+}
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
+var pool = new Pool(config);
 app.get('/article-one', function(req, res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
@@ -63,7 +35,20 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
+app.get('/test-db',function(req, res){
+    //make a select request
+    //return a response
+    pool.query('SELECT * FROM test', function(err,result){
+        if(err){
+        res.status(500).send(err, toString() );
+            
+        }
+        else{
+            res.send('JSON',string(result))
+        }
+    });
+    
+});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
