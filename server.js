@@ -25,6 +25,10 @@ app.get('/article-two', function(req, res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
+app.get('/article-two', function(req, res){
+    res.send(createTemplate(articletwo));
+});
+
 app.get('/article-one', function(req, res){
     req.send('Article three requested and will be send here');
 });
