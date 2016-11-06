@@ -71,7 +71,8 @@ function hash (input, salt){
 	app.get('/hash/:input',function(req, res)
         {
            var hashedString = hash(req.params.input, 'this-is-some-random-string');
-           res.send(hashedString);
+          // res.send(hashedString);
+          return ["pbkdf2","10000", salt, hashed.toString('hex')].join("$");
             });
 
 
