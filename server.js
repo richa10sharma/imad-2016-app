@@ -1,7 +1,9 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var pool = new Pool(config);
+var Pool = require('pg').Pool;
+
+//var pool = new Pool(config);
 var crypto = require('crypto');
 var config = {
 
@@ -42,6 +44,7 @@ app.get('/article-one', function(req, res){
 app.get('/article-two', function(req, res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
+var pool = new Pool(config);
 //-------------------------------------------------------------------------------
 app.get('/article/article-two', function(req, res){
 //    var articleName= req.params.articleName; 
