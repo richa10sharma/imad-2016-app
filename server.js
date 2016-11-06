@@ -12,7 +12,7 @@ var config - {
     port:'5432',
     password:process.env.DB_PASSWORD
 };
-}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -26,8 +26,26 @@ app.get('/article-two', function(req, res){
 });
 //-------------------------------------------------------------------------------
 app.get('/article/article-two', function(req, res){
-    var articleName= req.params.articleName; 
-    res.send(createTemplate(articletwo));
+//    var articleName= req.params.articleName; 
+   pool.query("SELECT * from test WHERE id = "+req.params.articleName, function(err,result){
+       
+       if(err){
+           res.status(500).send(err.toString());
+       }
+       
+       else{
+           if(result.rows.length ===0){
+               res.status(404).send('article not found');
+               }
+               else{
+                   
+                   var articleData= result.rows[0];
+                   res.send(createTemplate(articleData));
+               }
+           
+       }
+   })   
+    
 });
 
 app.get('/article-one', function(req, res){
@@ -45,7 +63,7 @@ app.get('/test-db',function(req, res){
     //return a response
     pool.query('SELECT * FROM test', function(err,result){
         if(err){
-        res.status(500).send(err,toString());
+        res.status(500).send(err.toString());
             
         }
         else{
