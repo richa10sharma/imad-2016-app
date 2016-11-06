@@ -27,6 +27,7 @@ app.get('/article-two', function(req, res){
 //-------------------------------------------------------------------------------
 app.get('/article/article-two', function(req, res){
 //    var articleName= req.params.articleName; 
+//pool.query("SELECT * from test WHERE id = $1",[req.params.article], function(err,result)
    pool.query("SELECT * from test WHERE id = '"+req.params.articleName+"'", function(err,result){
        
        if(err){
