@@ -4,12 +4,12 @@ var path = require('path');
 var Pool = require('pg').Pool;
 
 //var pool = new Pool(config);
-var crypto = require('crypto');
+//var crypto = require('crypto');
 var config = {
 
     user:'richa10sharma',
     databse:'richa10sharma',
-    host:'http://db.imad.hasura-app.io',
+    host:'db.imad.hasura-app.io',
     port:'5432',
     password: process.env.DB_PASSWORD
 };
@@ -24,18 +24,7 @@ res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 
 
 
-function hash (input){
-    //how to create a hash 
-    var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
-    return hashed.toString('hex');
-    
-}
 
-app.get('/hash/:input',function(req, res)
-{
-   var hashedString = hash(req.params.input, 'this-is-some-random-string');
-   res.send(hashedString);
-});
 
 app.get('/article-one', function(req, res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
