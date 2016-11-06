@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var config - {
+var config = {
 
     user:'richa10sharma',
     databse:'richa10sharma',
