@@ -44,7 +44,7 @@ app.get('/article/article-two', function(req, res){
                }
            
        }
-   })   
+   });   
     
 });
 
