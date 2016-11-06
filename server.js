@@ -44,31 +44,9 @@ app.get('/article-one', function(req, res){
 app.get('/article-two', function(req, res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
-var pool = new Pool(config);
+
 //-------------------------------------------------------------------------------
-app.get('/article/article-two', function(req, res){
-//    var articleName= req.params.articleName; 
-//pool.query("SELECT * from test WHERE id = $1",[req.params.article], function(err,result)
-   pool.query("SELECT * from test WHERE id = '"+req.params.articleName+"'", function(err,result){
-       
-       if(err){
-           res.status(500).send(err.toString());
-       }
-       
-       else{
-           if(result.rows.length ===0){
-               res.status(404).send('article not found');
-               }
-               else{
-                   
-                   var articleData= result.rows[0];
-                   res.send(createTemplate(articleData));
-               }
-           
-       }
-   });   
-    
-});
+
 
 app.get('/article-one', function(req, res){
     req.send('Article three requested and will be send here');
@@ -80,6 +58,8 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+
+var pool = new Pool(config);
 app.get('/test-db',function(req, res){
     //make a select request
     //return a response
@@ -89,7 +69,7 @@ app.get('/test-db',function(req, res){
             
         }
         else{
-            res.send('JSON',stringify(result.rows));
+            res.send(JSON.stringify(result.rows));
         }
     });
     
