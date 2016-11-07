@@ -22,4 +22,8 @@ button.onclick = function() {
         }
     };
     
+    request.open('GET','http://richa10sharma.imad.hasura-app.io/counter',true);
+    requst.send(null);
+    
+    
 };
