@@ -87,9 +87,8 @@ app.post('/login', function (req, res) {
             else{
                 
                 var dbString = result.rows[0].password;
-                var salt = dbString.split('$')[2];
-                var hashedPassword = hash(password, salt);
-                if(hasedPassword == dbString){
+                //var hashedPassword = hash(password, salt);
+                if(password == dbString){
                    res.send('credentials are correct '); 
                 }
                 else{
