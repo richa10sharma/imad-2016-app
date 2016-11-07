@@ -1,6 +1,6 @@
-console.log('Loaded!');
+
 var submit = document.getElementById('submit_button');
-var counter = 0;
+
 submit.onclick = function() {
     
     
