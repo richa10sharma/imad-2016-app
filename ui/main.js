@@ -1,7 +1,7 @@
 console.log('Loaded!');
-var button = document.getElementById('main.txt');
+var submit = document.getElementById('submit_button');
 var counter = 0;
-button.onclick = function() {
+submit.onclick = function() {
     
     
     var request = new XMLHttpRequest();
@@ -9,21 +9,30 @@ button.onclick = function() {
     
     request.onreadystatechange = function(){
         
-        if(request.readystate === XMLHttpRequest.DONE){
+        if(request.readystate === XMLHttpRequest,DONE){
             
             if(request.status === 200)
             {
-                
-                var counter = request.responseText;
-                var span = document.getElementById('count');
-                span.innerHTML = counter.toString();
-                
-            }
+              console.log('user logged in');
+              alert('logged in successfully');
+              }
+              else if(request.status === 403)
+              {
+                  alert('username / password is incorrect');
+              }
+              else if(request.status === 500)
+              {
+                  alert('something went wrong');
+              }
         }
     };
     
-    request.open('GET','http://richa10sharma.imad.hasura-app.io/counter',true);
-    requst.send(null);
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    //var name = nameInput.value;
+    request.open('POST', 'http://richa10sharma.imad.hasura-app.io/login', true);
+    request.setRequestHeader('Content-Type', 'application/json');
+    requst.send(JSON.stringify({username: username, password: password}));
     
     
 };
