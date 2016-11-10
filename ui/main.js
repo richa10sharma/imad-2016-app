@@ -1,6 +1,6 @@
 function loadLoginForm () {
     var loginHtml = `
-        <h3>Login/Register to unlock awesome features</h3>
+        <h4>Login/Register to unlock awesome features</h4>
         <div class="input-field col s6">
         <input placeholder="username" id="username" type="text" class="validate">
         <label for="username">Username</label> 
