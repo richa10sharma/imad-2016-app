@@ -1,6 +1,7 @@
 function loadLoginForm () {
     var loginHtml = `
         <h4>Login/Register to unlock awesome features</h4>
+        <div class="row">
         <div class="input-field col s6">
         <input placeholder="username" id="username" type="text" class="validate">
         <label for="username">Username</label> 
@@ -10,7 +11,7 @@ function loadLoginForm () {
         <input placeholder="password" id="password" type="password" class="validate">
         <label for="password">Password</label> 
         </div>
-        
+        </div>
         
         <br/><br/>
         
