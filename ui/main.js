@@ -12,9 +12,6 @@ function loadLoginForm () {
         <label for="password">Password</label> 
         </div>
         </div>
-        
-        <br/><br/>
-        
         <input type="submit" id="login_btn" value="Login" class="waves-effect btn"/>
         <input type="submit" id="register_btn" value="Register" class="waves-effect btn"/>
         `;
