@@ -249,3 +249,7 @@ header.landing a{
     word-spacing: 1.25px;
 }
 
+nav ul li{
+    width: 200px !important;
+}
+
