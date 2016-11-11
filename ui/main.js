@@ -1,5 +1,6 @@
 function loadLoginForm () {
     var loginHtml = `
+         <div class=" col s12 m6 offset-m6">
         <h4>Login/Register to unlock awesome features</h4>
         <div class="row">
         <div class="input-field col s6">
@@ -14,6 +15,7 @@ function loadLoginForm () {
         </div>
         <input type="submit" id="login_btn" value="Login" class="waves-effect btn"/> &nbsp
         <input type="submit" id="register_btn" value="Register" class="waves-effect btn"/>
+        </div>
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
