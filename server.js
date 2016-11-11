@@ -31,8 +31,13 @@ function createTemplate (data) {
     var htmlTemplate = `
     <html>
       <head>
+        <link type="text/css" rel="stylesheet" href="/ui/materialize.min.css"  media="screen,projection"/>
+        
+           <link href="ui/fusion_style.css" type="text/css" rel="stylesheet">
+           <link href="/ui/style.css" rel="stylesheet" />
+    </head>
           <title>
-              ${title}
+           <h4>   ${title}</h4>
           </title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link href="/ui/style.css" rel="stylesheet" />
