@@ -58,7 +58,7 @@ function createTemplate (data) {
                 ${content}
               </div>
               <hr/>
-              <h4>Comments</h4>
+              <h6>Comments</h6>
              
               <div id="comments">
                 <center>Loading comments...</center>
