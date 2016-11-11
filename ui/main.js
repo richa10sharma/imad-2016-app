@@ -1,7 +1,7 @@
 function loadLoginForm () {
     var loginHtml = `
         <div class=" row">
-            <h4 class="col s12">Login/Register to unlock awesome features</h4>
+            <h4 class="col s12 m8 offset-m2">Login/Register</h4>
             <div class="col s12 m8 offset-m2">
                 <div class="input-field col s6">
                 <input placeholder="username" id="username" type="text" class="validate">
@@ -13,8 +13,8 @@ function loadLoginForm () {
                 <label for="password">Password</label> 
                 </div>
             
-                <input type="submit" id="login_btn" value="Login" class="waves-effect btn"/> &nbsp
-                <input type="submit" id="register_btn" value="Register" class="waves-effect btn"/>
+                <input type="submit" id="login_btn" value="Login" class="waves-effect btn col s12 m2 offset-m3"/> &nbsp
+                <input type="submit" id="register_btn" value="Register" class="waves-effect btn col s12 m2 offset-m2"/>
             </div>
         </div>
         `;
