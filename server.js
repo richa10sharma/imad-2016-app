@@ -63,11 +63,11 @@ function createTemplate (data) {
             </ul>
         </div>
       
-      
+      <div class="container">
       <div class="main-container " >
           
 		<div class="center">
-          <div class="container">
+          
               <div>
                   <a href="/">Home</a>
               </div>
@@ -84,6 +84,8 @@ function createTemplate (data) {
               </div>
               </center>
               <hr/>
+               </div>
+		  </div>
               <h6>Comments</h6>
              
               <div id="comments">
@@ -93,8 +95,7 @@ function createTemplate (data) {
                <div id="comment_form">
               </div>
             </div>
-		  </div>
-		  </div>
+		 
           <script type="text/javascript" src="/ui/article.js"></script>
       </body>
     </html>
