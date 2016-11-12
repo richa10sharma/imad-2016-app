@@ -92,11 +92,19 @@ function loadLoginForm () {
 
 function loadLoggedInUser (username) {
     
-    
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
     
     var loginArea = document.getElementById('loogout');
+    if(username == 'admin'){
+    loginArea.innerHTML = `Hi ${username}<a style="display:inline-block" href="/addarticle" id='loogout'>Add Article</a>
+    <a style="display:inline-block" href="/logout" id='loogout'>Logout</a>`;
+    }
+    else{
     loginArea.innerHTML = `Hi ${username} <a style="display:inline-block" href="/logout" id='loogout'>Logout</a>`;
-}
+    }
+        
+    }
 
 function loadLogin () {
     // Check if the user is already logged in
