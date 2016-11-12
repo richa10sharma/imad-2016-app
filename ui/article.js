@@ -51,7 +51,7 @@ function loadCommentForm () {
 function submitarticle () {
     
     // Submit username/password to login
-    var Submit = document.getElementById('Submit');
+    var Submit = document.getElementById('article_submit');
     Submit.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
