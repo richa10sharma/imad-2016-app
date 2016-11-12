@@ -101,7 +101,7 @@ function createTemplate (data) {
     `;
     return htmlTemplate;
 
-
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -257,7 +257,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
 //------------------------------add article------------------------------
 
 app.get('/addarticle', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'addarticlee'));
 });
 
 
@@ -286,6 +286,7 @@ app.post('/submit-article', function (req, res) {
         res.status(403).send('Only logged in users can comment');
     }
 });
+
 
 
 //---------------------------------------------------------------
