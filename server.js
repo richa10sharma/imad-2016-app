@@ -257,7 +257,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
 //------------------------------add article------------------------------
 
 app.get('/addarticle', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'addarticlee'));
+  res.sendFile(path.join(__dirname, 'ui', 'addarticlee.html'));
 });
 
 
