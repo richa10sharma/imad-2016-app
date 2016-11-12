@@ -6,7 +6,7 @@ function loadCommentForm () {
     
             <div class="input-field col s6">
             <textarea id="comment_text" class="materialize-textarea" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
-              <label for="comments">Comment</label><br/>
+              <label for="comments"></label><br/>
               <input type="submit" id="submit" value="Submit" class="waves-effect btn col s12 m2 offset-m3"/>
         </div>
         <br/>    
