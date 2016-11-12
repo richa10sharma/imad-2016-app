@@ -93,8 +93,6 @@ function loadLoginForm () {
 function loadLoggedInUser (username) {
     
     var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
-    
     var loginArea = document.getElementById('loogout');
     if(username == 'admin'){
     loginArea.innerHTML = `Hi ${username}<a style="display:inline-block" href="/addarticle" id='adarticle'>Add Article</a>
