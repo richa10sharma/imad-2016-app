@@ -46,6 +46,45 @@ function loadCommentForm () {
     };
 }
 
+//-----------------------submit article----------------
+
+function submitarticle () {
+    
+    // Submit username/password to login
+    var Submit = document.getElementById('Submit');
+    Submit.onclick = function () {
+        // Create a request object
+        var request = new XMLHttpRequest();
+        
+        // Capture the response and store it in a variable
+        request.onreadystatechange = function () {
+          if (request.readyState === XMLHttpRequest.DONE) {
+                // Take some action
+                if (request.status === 200) {
+                    // clear the form & reload all the comments
+                    document.getElementById('content').value = '';
+                        
+                } else {
+                    alert('Error! Could not submit comment');
+                }
+                Submit.value = 'Submit';
+          }
+        };
+        
+        // Make the request
+        var content = document.getElementById('content').value;
+        var title = document.getElementById('title').value;
+        var heading = document.getElementById('heading').value;
+        request.open('POST', '/submit-article', true);
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.send(JSON.stringify({comment: comment, title: title, heading: heading}));  
+        submit.value = 'Submitting...';
+        
+    };
+}
+//-------------------
+
+
 function loadLogin () {
     // Check if the user is already logged in
     var request = new XMLHttpRequest();
