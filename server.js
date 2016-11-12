@@ -62,11 +62,14 @@ function createTemplate (data) {
                 <li><a class="waves-effect" href="#!">Third Link</a></li>
             </ul>
         </div>
-      
+     
+		<div class="center">
+          
+          
+           
       <div class="container">
       <div class="main-container " >
           
-		<div class="center">
           
               <div>
                   <a href="/">Home</a>
