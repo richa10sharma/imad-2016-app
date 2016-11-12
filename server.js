@@ -36,13 +36,35 @@ function createTemplate (data) {
            <link href="ui/fusion_style.css" type="text/css" rel="stylesheet">
            <link href="/ui/style.css" rel="stylesheet" />
     </head>
-          <title>
-            ${title}
-          </title>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link href="/ui/style.css" rel="stylesheet" />
-      </head> 
-      <body>
+          body>
+        
+         <header>
+            <nav>
+                <div>
+                  <a href="#!" class="brand-logo">Avalanche</a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                   
+                    
+                   
+                  </ul>
+                  
+                </div>
+            </nav>
+        </header>
+        
+        <div class="sidebar">
+            <ul id="slide-out" class="side-nav fixed">
+                <li><a href="#!" class="waves-effect">First Link</a></li>
+                <li><a href="#!" class="waves-effect">Second Link</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">Subheader</a></li>
+                <li><a class="waves-effect" href="#!">Third Link</a></li>
+            </ul>
+        </div>
+      
+      
+      
           <div class="container">
               <div>
                   <a href="/">Home</a>
