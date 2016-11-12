@@ -70,7 +70,7 @@ function createTemplate (data) {
           
 		<div class="center">
           <div class="container">
-              <hr/>
+              
               <center>
               <h3>
                   ${heading}
