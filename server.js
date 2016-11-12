@@ -64,7 +64,9 @@ function createTemplate (data) {
         </div>
       
       
-      
+      <div class="main-container " >
+          
+		<div class="center">
           <div class="container">
               <div>
                   <a href="/">Home</a>
@@ -90,7 +92,9 @@ function createTemplate (data) {
               
                <div id="comment_form">
               </div>
-          </div>
+            </div>
+		  </div>
+		  </div>
           <script type="text/javascript" src="/ui/article.js"></script>
       </body>
     </html>
