@@ -48,6 +48,7 @@ function createTemplate (data) {
                   <a href="/">Home</a>
               </div>
               <hr/>
+              <center>
               <h3>
                   ${heading}
               </h3>
@@ -57,6 +58,7 @@ function createTemplate (data) {
               <div>
                 ${content}
               </div>
+              </center>
               <hr/>
               <h6>Comments</h6>
              
