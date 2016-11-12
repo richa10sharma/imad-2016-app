@@ -45,7 +45,7 @@ function createTemplate (data) {
                   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                   <ul class="right hide-on-med-and-down">
                    
-                    
+                       <a href="/">Home</a>
                    
                   </ul>
                   
@@ -70,9 +70,6 @@ function createTemplate (data) {
           
 		<div class="center">
           <div class="container">
-              <div>
-                  <a href="/">Home</a>
-              </div>
               <hr/>
               <center>
               <h3>
