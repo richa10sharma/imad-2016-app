@@ -264,25 +264,17 @@ app.get('/addarticle', function (req, res) {
 app.post('/submit-article', function (req, res) {
    // Check if the user is logged in
     if (req.session && req.session.auth && req.session.auth.userId) {
-        pool.query("INSERT INTO article (title, heading, content) VALUES ($1, $2, $3)",
-                        [req.body.comment, articleId, req.session.auth.userId],
-                        function (err, result) {
+       
+               pool.query(
+                    "INSERT INTO comment (comment, article_id, user_id) VALUES ($1, $2, $3)", [req.body.comment, articleId, req.session.auth.userId],function (err, result) {
                             if (err) {
                                 res.status(500).send(err.toString());
                             } else {
-                                res.status(200).send('Comment inserted!')
-                            }
-                        });pool.query(
-                        "INSERT INTO comment (comment, article_id, user_id) VALUES ($1, $2, $3)",
-                        [req.body.comment, articleId, req.session.auth.userId],
-                        function (err, result) {
-                            if (err) {
-                                res.status(500).send(err.toString());
-                            } else {
-                                res.status(200).send('Comment inserted!')
+                                res.status(200).send('Article Added!')
                             }
                         });     
-    } else {
+    }
+    else {
         res.status(403).send('Only logged in users can comment');
     }
 });
