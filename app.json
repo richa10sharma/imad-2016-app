@@ -1,10 +1,10 @@
 {
-	"name": "Node.js Getting Started",
-	"decription": "A barebines Node.js app is using Express 4",
-	"repository": "https://github.com/richa10sharma/imad-2016-app/blob/master",
+	"name": "Avalanche",
+	"decription": "a motivational blog",
+	"repository": "https://github.com/richa10sharma/imad-2016-app",
 	"logo": "http://node-js-sample.heroku/node.svg",
-	"keywords": ["node", "express", "static"],
-	"image": "heroku/nodejs"
+	"keywords": ["node", "express"],
+	
 	
 	
 	
