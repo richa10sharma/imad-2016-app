@@ -2,7 +2,7 @@
   "name": "imad-2016-base",
   "version": "0.1.0",
   "description": "IMAD 2016 course app",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +11,9 @@
   "dependencies": {
     "express": "^4.14.0",
     "morgan": "^1.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richa10sharma/imad-2016-app/"
+  },
 }
