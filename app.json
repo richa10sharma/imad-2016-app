@@ -1,14 +1,18 @@
 {
 	"name": "Avalanche",
 	"decription": "a motivational blog",
-	"repository": "https://github.com/richa10sharma/imad-2016-app",
 	"logo": "http://node-js-sample.heroku/node.svg",
-	"keywords": ["node", "express"],
-	
-	
-	
-	
-	
-
-
+	"keywords": ["node", "express","heroku"],
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"ejs": "2.4.1",
+		"express": "4.13.3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/richa10sharma/imad-2016-app"
+	}
 }
