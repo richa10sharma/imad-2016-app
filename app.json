@@ -3,9 +3,9 @@
 	"decription": "a motivational blog",
 	"logo": "http://node-js-sample.heroku/node.svg",
 	"keywords": ["node", "express","heroku"],
-	"main": "server.js",
+	"main": "index.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "node index.js"
 	},
 	"dependencies": {
 		"ejs": "2.4.1",
