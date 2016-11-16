@@ -1,26 +1,15 @@
 {
-  "name": "imad-2016-app",
-  "version": "0.2.5",
-  "description": "A sample Node.js app using Express 4",
-  "engines": {
-    "node": "5.9.1"
-  },
-  "main": "index.js",
+  "name": "imad-2016-base",
+  "version": "0.1.0",
+  "description": "IMAD 2016 course app",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "ejs": "2.4.1",
-    "express": "4.13.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/richa10sharma/imad-2016-app"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "license": "MIT"
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
 }
