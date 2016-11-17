@@ -120,14 +120,15 @@ function loadComments () {
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
                     content += `<div class="comment">
-                        <p>${escapeHTML(commentsData[i].comment)}</p>
-                        <div class="commenter">
-                        <div class="col s12 m12">
+                         <div class="col s12 m12">
                 			<!--<h2 class="header">Horizontal Card</h2>-->
                 			<div class="card horizontal hoverable">
                 			
                 			<div class="card-stacked">
                 			<div class="card-content">
+                        <p>${escapeHTML(commentsData[i].comment)}</p>
+                        <div class="commenter">
+                       
                             ${commentsData[i].username} - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()} 
                         </div>
                         </div>
