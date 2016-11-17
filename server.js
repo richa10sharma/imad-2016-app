@@ -112,7 +112,7 @@ app.get('/', function (req, res) {
 
 
 app.get('/image', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'richa.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'cover.png'));
 });
 
 
