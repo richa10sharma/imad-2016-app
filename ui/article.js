@@ -122,8 +122,18 @@ function loadComments () {
                     content += `<div class="comment">
                         <p>${escapeHTML(commentsData[i].comment)}</p>
                         <div class="commenter">
+                        <div class="col s12 m12">
+                			<!--<h2 class="header">Horizontal Card</h2>-->
+                			<div class="card horizontal hoverable">
+                			
+                			<div class="card-stacked">
+                			<div class="card-content">
                             ${commentsData[i].username} - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()} 
                         </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
                     </div>`;
                 }
                 comments.innerHTML = content;
