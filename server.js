@@ -42,7 +42,7 @@ function createTemplate (data) {
          <header>
             <nav>
                 <div>
-                  <a href="#!" class="brand-logo">Avalanche</a>
+                  <a href="/" class="brand-logo">Avalanche</a>
                   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                   <ul class="right hide-on-med-and-down">
                     <li><a href="/">Home</a></li>
@@ -56,11 +56,10 @@ function createTemplate (data) {
         
         <div class="sidebar">
             <ul id="slide-out" class="side-nav fixed">
-                <li><a href="#!" class="waves-effect">First Link</a></li>
-                <li><a href="#!" class="waves-effect">Second Link</a></li>
-                <li><div class="divider"></div></li>
-                <li><a class="subheader">Subheader</a></li>
-                <li><a class="waves-effect" href="#!">Third Link</a></li>
+               <h5><font color="white">My Articles</font></h5>
+                <div id="articles">
+                <center>Loading articles...</center>
+                </div>
             </ul>
         </div>
      
