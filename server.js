@@ -275,7 +275,7 @@ app.post('/submit-article', function (req, res) {
     if (req.session && req.session.auth && req.session.auth.userId) {
        
                pool.query(
-                    "INSERT INTO comment (title, heading, content) VALUES ($1, $2, $3)", [req.body.title, req.body.heading, req.body.content],function (err, result) {
+                    "INSERT INTO comment (title, heading, content, date) VALUES ($1, $2, $3, $4)", [req.body.title, req.body.heading, req.body.content, req.body.date],function (err, result) {
                             if (err) {
                                 res.status(500).send(err.toString());
                             } else {
