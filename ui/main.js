@@ -93,7 +93,7 @@ function loadLoginForm () {
 function loadLoggedInUser (username) {
     
     var username = document.getElementById('username').value;
-    var loginArea = document.getElementById('loogout');
+    var loginArea = document.getElementById('links');
     if(username == 'admin'){
     loginArea.innerHTML = ` <li>Hi ${username} </li>
      <li><a style="display:inline-block" href="/addarticle" id='adarticle'>Add Article</a> </li>
