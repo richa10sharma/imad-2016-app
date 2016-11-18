@@ -53,7 +53,7 @@ function submitarticle () {
     // Submit username/password to login
     var Submit = document.getElementById('article_submit');
     Submit.onclick = function () {
-        // Create a request object
+        // Create a request objec
         var request = new XMLHttpRequest();
         
         // Capture the response and store it in a variable
