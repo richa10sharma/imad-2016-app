@@ -18,6 +18,7 @@ function loadLoginForm () {
             </div>
         </div>
         `;
+        //sssssss
     document.getElementById('login_area').innerHTML = loginHtml;
     
     // Submit username/password to login
