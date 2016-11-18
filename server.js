@@ -98,7 +98,8 @@ function createTemplate (data) {
             <!--Import jQuery before materialize.js-->
             <script type="text/javascript" src="ui/materialize.min.js">
             </script>
-      
+      <script type="text/javascript" src="/ui/main.js">
+        </script>
         
        <script type="text/javascript" src="/ui/article.js">
         </script>
