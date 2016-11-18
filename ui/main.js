@@ -95,8 +95,9 @@ function loadLoggedInUser (username) {
     var username = document.getElementById('username').value;
     var loginArea = document.getElementById('loogout');
     if(username == 'admin'){
-    loginArea.innerHTML = `Hi ${username}<a style="display:inline-block" href="/addarticle" id='adarticle'>Add Article</a>
-    <a style="display:inline-block" href="/logout" id='loogout'>Logout</a>`;
+    loginArea.innerHTML = ` <li>Hi ${username} </li>
+     <li><a style="display:inline-block" href="/addarticle" id='adarticle'>Add Article</a> </li>
+     <li><a style="display:inline-block" href="/logout" id='loogout'>Logout</a> </li>`;
     }
     else{
     loginArea.innerHTML = `Hi ${username} <a style="display:inline-block" href="/logout" id='loogout'>Logout</a>`;
