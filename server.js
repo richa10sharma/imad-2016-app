@@ -37,7 +37,7 @@ function createTemplate (data) {
            <link href="ui/fusion_style.css" type="text/css" rel="stylesheet">
            <link href="/ui/style.css" rel="stylesheet" />
     </head>
-          body>
+         <body>
         
          <header>
             <nav>
