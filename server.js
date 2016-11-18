@@ -39,16 +39,15 @@ function createTemplate (data) {
     </head>
          <body>
         
-         <header>
+          <header>
             <nav>
-                <div>
+                
                   <a href="/" class="brand-logo">Avalanche</a>
                   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                   <ul class="right hide-on-med-and-down" id="links">
-                  <a>  <center>Loading login status...</center></a>
+                  <ul class="right hide-on-med-and-down" id="links">
+                   <a> <center>Loading login status...</center></a>
                   </ul>
-                  
-                </div>
+             
             </nav>
         </header>
         
@@ -95,6 +94,8 @@ function createTemplate (data) {
            <script src="ui/jquery-3.1.1.min.js"></script>
             <!--Import jQuery before materialize.js-->
             <script type="text/javascript" src="ui/materialize.min.js"></script>
+       <script type="text/javascript" src="/ui/article.js">
+        </script>
         <script type="text/javascript" src="/ui/main.js">
         </script>
         <script type="text/javascript" src="/ui/article.js">
