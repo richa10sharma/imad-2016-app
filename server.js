@@ -45,8 +45,7 @@ function createTemplate (data) {
                   <a href="/" class="brand-logo">Avalanche</a>
                   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                   <ul class="right hide-on-med-and-down" id="links">
-                  <li><a>Hi ${username} </a></li> 
-                  <li><a style="display:inline-block" href="/logout" id='loogout'>Logout</a> </li>
+                  
                     
                   </ul>
              
