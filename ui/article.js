@@ -77,7 +77,7 @@ function submitarticle () {
         var heading = document.getElementById('heading').value;
         request.open('POST', '/submit-article', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({comment: comment, title: title, heading: heading}));  
+        request.send(JSON.stringify({title: title, content: content,  heading: heading}));  
         submit.value = 'Submitting...';
         
     };
