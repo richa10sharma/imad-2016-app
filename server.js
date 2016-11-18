@@ -45,7 +45,7 @@ function createTemplate (data) {
                   <a href="/" class="brand-logo">Avalanche</a>
                   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                   <ul class="right hide-on-med-and-down" id="links">
-                    <li><a href="#">About</a></li>
+                  
                     
                   </ul>
              
@@ -101,8 +101,7 @@ function createTemplate (data) {
       
         <script type="text/javascript" src="/ui/main.js">
         </script>
-         <script type="text/javascript" src="/ui/article.js">
-        </script>
+       
         
       </body>
     </html>
