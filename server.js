@@ -120,7 +120,13 @@ app.get('/image', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'cover.png'));
 });
 
+app.get('/fbt', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fbt.png'));
+});
 
+app.get('/tweety2', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'tweety2.png'));
+});
 function hash (input, salt) {
     // How do we create a hash?
     var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
