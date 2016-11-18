@@ -75,7 +75,7 @@ function submitarticle () {
         var content = document.getElementById('content').value;
         var title = document.getElementById('title').value;
         var heading = document.getElementById('heading').value;
-         var date = document.getElementById('date').value;
+        var date = document.getElementById('date').value;
         request.open('POST', '/submit-article', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({title: title, content: content,  heading: heading, date: date}));  
