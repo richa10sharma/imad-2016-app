@@ -100,7 +100,7 @@ function loadLoggedInUser (username) {
      <li><a style="display:inline-block" href="/logout" id='loogout'>Logout</a> </li>`;
     }
     else{
-    loginArea.innerHTML = `<li>Hi ${username} </li>  <li><a style="display:inline-block" href="/logout" id='loogout'>Logout</a> </li>`;
+    loginArea.innerHTML = `<li><a>Hi ${username} </a></li>  <li><a style="display:inline-block" href="/logout" id='loogout'>Logout</a> </li>`;
     }
         
     }
