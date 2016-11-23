@@ -81,11 +81,11 @@ function createTemplate (data) {
               </div>
               </center>
               <hr/>
-              <h6>Comments</h6>
+             
              
              <div id="comment_form">
               </div>
-             
+              <h6>Previous Comments</h6>
               <div id="comments">
               Loading comments...
               </div>
