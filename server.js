@@ -30,21 +30,22 @@ function createTemplate (data) {
     var content = data.content;
     
     var htmlTemplate = `
-    <html>
-      <head>
+   <!doctype html>
+<html>
+    <head>
         <link type="text/css" rel="stylesheet" href="/ui/materialize.min.css"  media="screen,projection"/>
         
            <link href="ui/fusion_style.css" type="text/css" rel="stylesheet">
            <link href="/ui/style.css" rel="stylesheet" />
     </head>
-         <body>
+    <body>
         
-          <header>
+         <header>
             <nav>
                 
                   <a href="/" class="brand-logo">Avalanche</a>
                   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                   <ul class="right hide-on-med-and-down" id='login_area' >
+                  <ul class="right hide-on-med-and-down" id='login_area' >
                         
                   </ul>
              
@@ -53,10 +54,11 @@ function createTemplate (data) {
         
         <div class="sidebar">
             <ul id="slide-out" class="side-nav fixed">
-               <h5><font color="white">My Articles</font></h5>
+                <h5><font color="white">My Articles</font></h5>
                 <div id="articles">
-                <center>Loading articles...</center>
+                <center>Loading articles....</center>
                 </div>
+                
             </ul>
         </div>
      
