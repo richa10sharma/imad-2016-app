@@ -2,13 +2,13 @@ function loadLoginForm () {
     var loginHtml = `<li>
         
                 <div class="input-field col s6">
-        <a>        <input placeholder="username" id="username" type="text" class="validate"></a>
+                    <a><input placeholder="username" id="username" type="text" class="validate"></a>
                 
                 </div>
           </li>
           <li>
                 <div class="input-field col s6">
-                <input placeholder="password" id="password" type="password" class="validate">
+                <a><input placeholder="password" id="password" type="password" class="validate"></a>
                
                 </div>
             </li>
