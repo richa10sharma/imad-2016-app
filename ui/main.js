@@ -1,5 +1,5 @@
 function loadLoginForm () {
-    var loginHtml = `<li>
+    var loginHtml = `
         <div class=" row">
             <h4 class="col s12 m8 offset-m2">Login/Register</h4>
             <div class="col s12 m8 offset-m2">
@@ -8,8 +8,7 @@ function loadLoginForm () {
                 <input placeholder="username" id="username" type="text" class="validate">
                 <label for="username">Username</label> 
                 </div>
-            </li>
-            <li>
+          
                 <div class="input-field col s6">
                 <input placeholder="password" id="password" type="password" class="validate">
                 <label for="password">Password</label> 
@@ -18,7 +17,7 @@ function loadLoginForm () {
                 <input type="submit" id="login_btn" value="Login" class="waves-effect btn col s12 m2 offset-m3"/> &nbsp
                 <input type="submit" id="register_btn" value="Register" class="waves-effect btn col s12 m2 offset-m2"/>
             </div>
-        </div></li>
+        </div>
         `;
         
     document.getElementById('login_area').innerHTML = loginHtml;
