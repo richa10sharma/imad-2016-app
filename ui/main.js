@@ -1,9 +1,6 @@
 function loadLoginForm () {
     var loginHtml = `<li>
         
-            <h4 class="col s12 m8 offset-m2">Login/Register</h4>
-            <div class="col s12 m8 offset-m2">
-            
                 <div class="input-field col s6">
                 <input placeholder="username" id="username" type="text" class="validate">
                 <label for="username">Username</label> 
@@ -17,7 +14,7 @@ function loadLoginForm () {
             </li>
                 <li><input type="submit" id="login_btn" value="Login" class="waves-effect btn col s12 m2 offset-m3"/> </li>&nbsp
                <li> <input type="submit" id="register_btn" value="Register" class="waves-effect btn col s12 m2 offset-m2"/></li>
-            </div>
+            
         
         `;
         
