@@ -110,20 +110,6 @@ function escapeHTML (text)
 }
 
 
-function loadLoggedInUser (username) {
-    
-    var username = document.getElementById('username').value;
-    var loginArea = document.getElementById('links');
-    if(username == 'admin'){
-    loginArea.innerHTML = ` <li><a>Hi ${username} </a></li>
-     <li><a style="display:inline-block" href="/addarticle" id='adarticle'>Add Article</a> </li>
-     <li><a style="display:inline-block" href="/logout" id='loogout'>Logout</a> </li>`;
-    }
-    else{
-    loginArea.innerHTML = `<li><a>Hi ${username} </a></li>  <li><a style="display:inline-block" href="/logout" id='loogout'>Logout</a> </li>`;
-    }
-        
-    }
 
 function loadComments () {
         // Check if the user is already logged in
