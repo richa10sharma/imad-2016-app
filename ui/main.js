@@ -14,11 +14,11 @@ function loadLoginForm () {
                 <input placeholder="password" id="password" type="password" class="validate">
                 <label for="password">Password</label> 
                 </div>
-            
-                <input type="submit" id="login_btn" value="Login" class="waves-effect btn col s12 m2 offset-m3"/> &nbsp
-                <input type="submit" id="register_btn" value="Register" class="waves-effect btn col s12 m2 offset-m2"/>
+            </li>
+                <li><input type="submit" id="login_btn" value="Login" class="waves-effect btn col s12 m2 offset-m3"/> </li>&nbsp
+               <li> <input type="submit" id="register_btn" value="Register" class="waves-effect btn col s12 m2 offset-m2"/></li>
             </div>
-        </li>
+        
         `;
         
     document.getElementById('login_area').innerHTML = loginHtml;
