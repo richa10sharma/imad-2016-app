@@ -2,14 +2,14 @@ function loadLoginForm () {
     var loginHtml = `<li>
         
                 <div class="input-field col s6">
-                <input  id="username" type="text" class="validate">
-                <label for="username">Username</label> 
+                <input placeholder="username" id="username" type="text" class="validate">
+                
                 </div>
           </li>
           <li>
                 <div class="input-field col s6">
                 <input placeholder="password" id="password" type="password" class="validate">
-                <label for="password">Password</label> 
+               
                 </div>
             </li>
                 <li><input type="submit" id="login_btn" value="Login" class="waves-effect btn col s12 m2 offset-m3"/> </li>&nbsp
