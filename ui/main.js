@@ -1,5 +1,6 @@
 function loadLoginForm () {
-    var loginHtml = `<li>
+   
+var loginHtml = `<li>
         
                 <div class="input-field col s6">
                     <a><input placeholder="username" id="username" type="text" class="validate"></a>
@@ -65,15 +66,16 @@ function loadLoginForm () {
         
         // Capture the response and store it in a variable
         request.onreadystatechange = function () {
-              if (request.readyState === XMLHttpRequest.DONE) {
-               // Take some action
-               if (request.status === 200) {
-                   alert('User created successfully');
-                   register.value = 'Registered!';
-               } else {
-                   alert('Could not register the user');
-                   register.value = 'Register';
-                }
+          if (request.readyState === XMLHttpRequest.DONE) {
+              // Take some action
+              if (request.status === 200) {
+                  alert('User created successfully');
+                  register.value = 'Registered!';
+              } else {
+                  alert('Could not register the user');
+                  register.value = 'Register';
+              }
+          }
         };
         
         // Make the request
@@ -88,7 +90,6 @@ function loadLoginForm () {
     
     };
 }
-
 function loadLoggedInUser (username) {
     
    
@@ -99,6 +100,7 @@ function loadLoggedInUser (username) {
     
         
     }
+	
 
 function loadLogin () {
     // Check if the user is already logged in
@@ -143,8 +145,7 @@ function loadArticles () {
     request.send(null);
 }
 
-
-// The first thing to do is to check if the user is logged in
+// The first thing to do is to check if the user is logged in!
 loadLogin();
 
 // Now this is something that we could have directly done on the server-side using templating too!
