@@ -157,10 +157,16 @@ app.post('/create-user', function (req, res) {
    });
 });
 //--
-app.post('/login', function (req, res) {
-   var username = req.body.username;
-   var password = req.body.password;
-   
+app.post('/login',function(req,res){
+ var username=req.body.username;
+ var password=req.body.password;
+ if(!username.trim() || !password.trim() || username.length>32 || password.length>32){
+      res.status(400).send('Cannot leave username or password blank.Please Enter Username/Password:(Upto 32 chars)')
+ }
+ else if(!/^[a-zA-Z0-9_ .@]+$/.test(username)){  //If username contains other than a-z,A-Z,0-9,@._BLANKSPACE then send error.
+    res.status(500).send("Username can't contain special characters except _.@");
+}
+else{
    pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
@@ -190,6 +196,7 @@ app.post('/login', function (req, res) {
           }
       }
    });
+}
 });
 
 app.get('/check-login', function (req, res) {
