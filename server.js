@@ -86,7 +86,7 @@ function createTemplate (data) {
              
              <div id="comment_form">
               </div>
-              <h6>Previous Comments Register to comment</h6>
+              <h6>Previous Comments</h6>
               <div id="comments">
               Loading comments...
               </div>
